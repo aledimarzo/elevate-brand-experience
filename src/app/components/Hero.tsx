@@ -30,7 +30,7 @@ export function Hero() {
           <MirageLogo
             className="h-64 w-64 sm:h-80 sm:w-80 md:h-[21rem] md:w-[21rem] lg:h-[23rem] lg:w-[23rem] xl:h-[24rem] xl:w-[24rem]"
             imageClassName="drop-shadow-none"
-            glowClassName=""
+            glowClassName="bg-[radial-gradient(circle,rgba(255,214,92,0.20)_0%,rgba(255,180,32,0.12)_38%,rgba(255,168,0,0.06)_58%,rgba(255,168,0,0)_76%)]"
             enableFlip
             ambientMotion
             pauseAndResetOnHover
@@ -121,7 +121,7 @@ export function Hero() {
           </motion.span>
         </motion.button>
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-[-6rem] z-0 h-40 bg-gradient-to-b from-transparent via-[#09080d]/28 to-[#050509]/82 blur-2xl" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-[-5.5rem] z-0 h-44 bg-gradient-to-b from-transparent via-[#09080d]/22 to-[#050509]/70 blur-3xl" />
       </div>
     </section>
   );
