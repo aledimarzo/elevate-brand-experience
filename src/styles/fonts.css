@@ -1,0 +1,5 @@
+/* Satoshi Font Family */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap');
+
+/* Albertson Font Family for Section Titles */
+@import url('https://fonts.cdnfonts.com/css/albertson');

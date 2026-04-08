@@ -1,0 +1,121 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+@font-face {
+  font-family: 'ModernCyber';
+  src: url('../assets/fonts/ModernCyber.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0f;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.connect-shimmer {
+  animation: connectShimmer 2.2s linear infinite;
+}
+
+@keyframes connectShimmer {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+
+.modal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249, 115, 22, 0.35) rgba(255, 255, 255, 0.04);
+}
+
+.modal-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(249, 115, 22, 0.55), rgba(168, 85, 247, 0.42));
+  border-radius: 999px;
+  border: 2px solid rgba(6, 6, 12, 0.9);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .gpu-smooth {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+.hero-logo-shell {
+  transform-style: preserve-3d;
+  isolation: isolate;
+}
+
+
+body {
+  overscroll-behavior-y: none;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+
+
+
+.navbar-brand-glow:hover .navbar-logo-ring,
+.navbar-brand-glow:hover .footer-logo-ring,
+.footer-brand-glow:hover .footer-logo-ring {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.navbar-logo-ring,
+.footer-logo-ring {
+  opacity: 0;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 0 24px rgba(255, 179, 71, 0.22), 0 0 46px rgba(249, 115, 22, 0.18);
+  background: radial-gradient(circle, rgba(255, 192, 77, 0.08) 0%, rgba(249, 115, 22, 0.04) 44%, rgba(0, 0, 0, 0) 72%);
+  filter: blur(10px);
+}
+
+.footer-brand-text {
+  position: relative;
+  display: inline-block;
+  font-family: 'ModernCyber', sans-serif;
+  letter-spacing: 0.08em;
+  transition: text-shadow 300ms ease, color 300ms ease, filter 300ms ease;
+}
+
+.footer-brand-text--light {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(255,255,255,0.14);
+}
+
+.footer-brand-text--accent {
+  color: #fb923c;
+  text-shadow: 0 0 14px rgba(249,115,22,0.26);
+}
+
+.footer-brand-glow:hover .footer-brand-text--light,
+.navbar-brand-glow:hover .footer-brand-text--light {
+  text-shadow: 0 0 16px rgba(255,255,255,0.22), 0 0 30px rgba(255, 188, 94, 0.10);
+}
+
+.footer-brand-glow:hover .footer-brand-text--accent,
+.navbar-brand-glow:hover .footer-brand-text--accent {
+  text-shadow: 0 0 18px rgba(249,115,22,0.34), 0 0 34px rgba(255, 190, 88, 0.18);
+}
