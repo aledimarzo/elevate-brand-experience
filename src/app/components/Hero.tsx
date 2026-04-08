@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { HardDrive, MessageSquare, ArrowRight } from 'lucide-react';
+import { HardDrive, MessageSquare, ArrowRight, ChevronDown } from 'lucide-react';
 import { useCallback } from 'react';
 import { MirageLogo } from './MirageLogo';
 
@@ -108,10 +108,20 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
           onClick={() => scrollToSection('stats')}
-          className="mx-auto text-xs uppercase tracking-[0.32em] text-gray-500 transition-colors hover:text-orange-300 sm:text-sm"
+          className="mx-auto flex flex-col items-center gap-2 text-xs uppercase tracking-[0.32em] text-gray-500 transition-colors hover:text-orange-300 sm:text-sm"
         >
-          Scorri in basso
+          <span>Scorri in basso</span>
+          <motion.span
+            aria-hidden
+            animate={{ y: [0, 7, 0], opacity: [0.72, 1, 0.72] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-orange-300 shadow-[0_0_18px_rgba(249,115,22,0.12)] backdrop-blur-sm"
+          >
+            <ChevronDown className="h-4 w-4" />
+          </motion.span>
         </motion.button>
+
+        <div className="pointer-events-none absolute inset-x-0 bottom-[-6rem] z-0 h-40 bg-gradient-to-b from-transparent via-[#09080d]/28 to-[#050509]/82 blur-2xl" />
       </div>
     </section>
   );

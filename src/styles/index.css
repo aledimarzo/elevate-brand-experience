@@ -87,9 +87,9 @@ img {
 .navbar-logo-ring,
 .footer-logo-ring {
   opacity: 0;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 0 24px rgba(255, 179, 71, 0.22), 0 0 46px rgba(249, 115, 22, 0.18);
-  background: radial-gradient(circle, rgba(255, 192, 77, 0.08) 0%, rgba(249, 115, 22, 0.04) 44%, rgba(0, 0, 0, 0) 72%);
-  filter: blur(10px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 0 14px rgba(255, 204, 110, 0.18), 0 0 24px rgba(249, 115, 22, 0.10);
+  background: radial-gradient(circle, rgba(255, 204, 110, 0.07) 0%, rgba(249, 115, 22, 0.03) 46%, rgba(0, 0, 0, 0) 72%);
+  filter: blur(7px);
 }
 
 .footer-brand-text {
@@ -112,10 +112,10 @@ img {
 
 .footer-brand-glow:hover .footer-brand-text--light,
 .navbar-brand-glow:hover .footer-brand-text--light {
-  text-shadow: 0 0 16px rgba(255,255,255,0.22), 0 0 30px rgba(255, 188, 94, 0.10);
+  text-shadow: 0 0 10px rgba(255,255,255,0.20), 0 0 18px rgba(255, 196, 110, 0.12);
 }
 
 .footer-brand-glow:hover .footer-brand-text--accent,
 .navbar-brand-glow:hover .footer-brand-text--accent {
-  text-shadow: 0 0 18px rgba(249,115,22,0.34), 0 0 34px rgba(255, 190, 88, 0.18);
+  text-shadow: 0 0 11px rgba(249,115,22,0.28), 0 0 20px rgba(255, 198, 110, 0.14);
 }

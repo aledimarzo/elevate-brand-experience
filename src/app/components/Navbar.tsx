@@ -101,13 +101,13 @@ export function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'border-b border-white/10 bg-black/60 backdrop-blur-xl' : 'bg-transparent'
+          isScrolled ? 'border-b border-white/10 bg-black/45 backdrop-blur-xl' : 'bg-transparent'
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <button onClick={() => scrollToSection('hero')} className="group navbar-brand-glow flex items-center gap-3 text-left transition-all duration-300" aria-label="Vai alla home">
             <MirageLogo className="h-10 w-10 transition-transform duration-300 group-hover:scale-[1.03]" imageClassName="drop-shadow-none" logoRingClassName="navbar-logo-ring" />
-            <span className="inline-flex items-baseline text-xl sm:text-2xl [filter:drop-shadow(0_0_0_rgba(0,0,0,0))] transition-all duration-300 group-hover:[filter:drop-shadow(0_0_14px_rgba(255,198,107,0.18))]">
+            <span className="inline-flex items-baseline text-xl sm:text-2xl [filter:drop-shadow(0_0_0_rgba(0,0,0,0))] transition-all duration-300 group-hover:[filter:drop-shadow(0_0_10px_rgba(255,210,120,0.24))]">
               <NavbarGlitchWord text="MIRAGE" />
               <span className="ml-2">
                 <NavbarGlitchWord text="RP" accent />

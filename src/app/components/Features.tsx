@@ -277,12 +277,7 @@ export function Features() {
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
             <span className="inline-flex flex-wrap items-baseline justify-center gap-x-3 gap-y-1 leading-tight" aria-label="L'ESPERIENZA DEFINITIVA">
-              <GlitchTitle
-                first="L'"
-                className="leading-tight"
-                firstClassName="text-white drop-shadow-[0_0_18px_rgba(255,255,255,0.18)]"
-                ariaLabel="L'"
-              />
+              <span className="font-['ModernCyber'] tracking-[0.08em] text-white drop-shadow-[0_0_18px_rgba(255,255,255,0.18)]">L'</span>
               <GlitchTitle first="ESPERIENZA" second="DEFINITIVA" className="leading-tight" firstClassName="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(249,115,22,0.4)]" secondClassName="text-white drop-shadow-[0_0_18px_rgba(255,255,255,0.18)]" ariaLabel="ESPERIENZA DEFINITIVA" />
             </span>
           </h2>

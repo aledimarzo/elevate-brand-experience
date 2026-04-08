@@ -58,12 +58,11 @@ export default function App() {
       </div>
 
       <div className="relative z-10">
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[100svh] bg-[linear-gradient(180deg,rgba(255,198,104,0.14)_0%,rgba(240,131,50,0.11)_18%,rgba(77,43,97,0.08)_36%,rgba(10,10,15,0)_74%)]" />
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[100svh] bg-[radial-gradient(circle_at_50%_18%,rgba(255,194,83,0.14)_0%,rgba(255,140,56,0.10)_20%,rgba(0,0,0,0)_58%)]" />
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[100svh] bg-[linear-gradient(90deg,rgba(3,3,5,0.92)_0%,rgba(5,5,8,0.76)_14%,rgba(7,7,10,0.34)_28%,rgba(0,0,0,0)_42%,rgba(0,0,0,0)_58%,rgba(7,7,10,0.40)_74%,rgba(5,5,8,0.80)_88%,rgba(3,3,5,0.94)_100%)]" />
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[100svh] bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_28%,rgba(8,6,10,0.22)_68%,rgba(3,3,5,0.54)_100%)]" />
-        <div className="pointer-events-none absolute inset-x-0 top-[100svh] bottom-0 z-0 bg-[linear-gradient(180deg,rgba(6,6,10,0.72)_0%,rgba(4,4,7,0.84)_16%,rgba(3,3,5,0.92)_36%,rgba(2,2,4,0.97)_58%,rgba(1,1,2,0.995)_100%)]" />
-        <div className="pointer-events-none absolute inset-x-0 top-[132svh] bottom-0 z-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(2,2,3,0.12)_18%,rgba(1,1,2,0.26)_40%,rgba(0,0,0,0.38)_62%,rgba(0,0,0,0.52)_100%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[100svh] bg-[linear-gradient(180deg,rgba(255,190,76,0.06)_0%,rgba(255,128,38,0.07)_16%,rgba(72,44,88,0.05)_34%,rgba(0,0,0,0)_74%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[100svh] bg-[linear-gradient(90deg,rgba(2,2,4,0.96)_0%,rgba(4,4,7,0.90)_12%,rgba(7,7,10,0.44)_28%,rgba(0,0,0,0.06)_46%,rgba(0,0,0,0.06)_54%,rgba(7,7,10,0.48)_72%,rgba(4,4,7,0.90)_88%,rgba(2,2,4,0.96)_100%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[100svh] bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_24%,rgba(8,6,10,0.18)_68%,rgba(3,3,5,0.56)_100%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-[calc(100svh-6rem)] z-0 h-32 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(6,6,10,0.38)_38%,rgba(5,5,9,0.78)_100%)] blur-xl" />
+        <div className="pointer-events-none absolute inset-x-0 top-[100svh] bottom-0 z-0 bg-[linear-gradient(180deg,rgba(5,5,9,0.86)_0%,rgba(5,5,9,0.86)_100%)]" />
         <Navbar />
         <Hero />
         <Suspense fallback={<SectionSkeleton />}>
